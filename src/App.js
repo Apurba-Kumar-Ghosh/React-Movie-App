@@ -1,14 +1,22 @@
 //https://api.themoviedb.org/3/movie/search/550?api_key=bcc9da9e9d42bc258ad578ae21559efd
 import React from "react";
-import "./App.css";
-import MovieSearch from "./MovieSearch";
 
+import { GetMovie } from "./containers/GetMovies";
+import {Route} from 'react-router-dom'
+import { MovieInfoContainer } from "./containers/MovieInfoContainer";
+import MovieSearch from "./MovieSearch";
 const App = () => {
   return (
-    <div className="container">
-      <h1 className="title">Movie Search App</h1>
-      <MovieSearch />
-    </div>
+    <>
+      <Route exact path="/movies/:id" component={MovieInfoContainer} />
+      <Route exact path="/" component={GetMovie} />
+      <Route exact path="/search" component={MovieSearch} />
+      <Route exact path="/something" >
+        <div>
+          hello sexyyyy
+        </div>
+      </Route>
+    </>
   );
 };
 

@@ -12,7 +12,8 @@ body {
 }
 .container {
   margin: 0 auto;
-  max-width: 1000px;
+  max-width: 1100px;
+  text-align : center;
 }
 p {
   font-size: 1.6rem;
@@ -24,7 +25,8 @@ small {
   font-size: 4.4rem;
 }
 .form {
-  display: grid;
+  display: flex;
+  align-items: center;
   margin-bottom: 1rem;
 }
 .label {
@@ -38,8 +40,8 @@ small {
   line-height: 2.8rem;
   margin-bottom: 1rem;
   border: 1px solid #333;
-  border-radius: 1.7rem;
-  padding: 0 1rem;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
 }
 .input:focus {
   border: 1px solid #333;
@@ -51,7 +53,7 @@ small {
   color: white;
   padding: 0.7rem;
   border: 1px solid #ddd;
-  border-radius: 1.7rem;
+  border-radius: 6px;
 }
 .button:hover,
 .button:focus {
